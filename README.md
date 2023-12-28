@@ -4,14 +4,7 @@ Fully automated and secured Terraform infra pipeline
 Testing teh webhook.....
 
 ## CICD Infra setup
-1) ###### GitHub setup
-    Fork GitHub Repository by using the existing repo "devops-fully-automated-infra" (https://github.com/cvamsikrishna11/devops-fully-automated-infra)     
-    - Go to GitHub (github.com)
-    - Login to your GitHub Account
-    - **Fork repository "devops-fully-automated-infra" (https://github.com/cvamsikrishna11/devops-fully-automated-infra.git) & name it "devops-fully-automated-infra"**
-    - Clone your newly created repo to your local
-
-2) ###### Jenkins
+1) ###### Jenkins
     - Create an **Amazon Linux 2 VM** instance and call it "Jenkins"
     - Instance type: t2.large
     - Security Group (Open): 8080, 9100 and 22 to 0.0.0.0/0
