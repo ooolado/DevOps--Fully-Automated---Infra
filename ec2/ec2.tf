@@ -76,7 +76,7 @@ resource "aws_instance" "web_server" {
   iam_instance_profile   = aws_iam_instance_profile.instance_profile.name
   tags                   = merge(var.tags, { Name = join("", [var.name, "-", "webserver"]) }, { Environment = var.name })
 
-  # best practices as per checkov scanner
+  # best practices as per checkov scanner best practice
   monitoring    = true
   ebs_optimized = true
    root_block_device {
