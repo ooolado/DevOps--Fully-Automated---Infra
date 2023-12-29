@@ -112,4 +112,23 @@ Once both the above steps are done click on Save.
 
 2) #### Terminate Jenkins EC2 instance
 
+# Pipeline script
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                sh "sudo yum install tree -y"
+            }
+        }
+        stage('terraform verification'){
+            steps{
+                sh "terraform --version"
+            }
+        }
+    }
+}
+
 # Happy learning, everyone 😊 😊
